@@ -5,7 +5,12 @@ width:50%, 50%;}
 
  body{
 background-color: rgba(0, 200, 175,0.5);} 
-	  
+    
+h1{
+  font-size:"40"; 
+  text-align:center;
+  }
+  
 #intro{
 border:2px solid;
 width:50%;
