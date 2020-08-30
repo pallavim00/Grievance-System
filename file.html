@@ -22,6 +22,28 @@ body{
 h1{
     text-align:center;
 }
+.button{
+display: inline-block;
+padding:10px  25px;
+font-size: 24px
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: white;
+background-color: blue;
+border:none;
+border-radius:15px;
+box-shadow: 0 2px gray;
+}
+.button: hover{
+background-color: #3e8e41;
+}
+.button: active{
+background-color: #3e8e41 ;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
 </style>
 </head>
 <body text="white">
@@ -29,10 +51,10 @@ h1{
 
 <h1><b><i>Welcome To The Student Grievance System!</i></b></h1>
 <br>
-<a href="login.html"><button><i>Login</i></button></a>
+<a href="login.html"><button class="button"><i>Login</i></button></a>
 <br>
 <br>
-<a href="signup.html"><button><i>Sign-up</i></button></a>
+<a href="signup.html"><button class="button"><i>Sign-up</i></button></a>
 <br>
 <br>
 </div>

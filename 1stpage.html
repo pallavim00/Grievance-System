@@ -19,19 +19,41 @@ body{
        padding: 30px;
        margin: 20px auto;
 }
+.button{
+display: inline-block;
+padding:10px  25px;
+font-size: 24px
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: white;
+background-color: blue;
+border:none;
+border-radius:15px;
+box-shadow: 0 2px gray;
+}
+.button: hover{
+background-color: #3e8e41;
+}
+.button: active{
+background-color: #3e8e41 ;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
 </style>
 </head>
 <body text="white">
 <div class="div2">
 <h1><b><i>Welcome To The Student Grievance System!</i></b></h1>
 <p>Register as...</p>
-<a href="file.html"><button><i>Student</i></button></a>
+<a href="file.html"><button class="button"><i>Student</i></button></a>
 <br>
 <br>
-<button><i>Staff</i></button>
+<button class="button"><i>Staff</i></button>
 <br>
 <br>
-<button><i>Committee</i></button>
+<button class="button"><i>Committee</i></button>
 <br>
 <br>
 </div>
