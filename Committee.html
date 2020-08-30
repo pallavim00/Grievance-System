@@ -2,10 +2,54 @@
 <html>
 
 <head>
-    <h4>Committee Details</h4>
+    <style>
+        body{
+              background-image: url("bg2.jpg");
+              background-size:cover;
+              background-attachment: fixed;
+        }
+        .div3{ 
+               border: 5px outset whitesmoke;
+               text-align: center;
+               position:relative;
+               left: 80px;
+               top: -10px;
+               background:black;
+               width: 35%;
+               padding: 40px;
+               margin: 100px auto;
+        }
+        h1{
+            text-align:center;
+        }
+        .button{
+        display: inline-block;
+        padding:10px  25px;
+        font-size: 24px
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: blue;
+        border:none;
+        border-radius:15px;
+        box-shadow: 0 4px gray;
+        }
+        .button: hover{
+        background-color: #3e8e41;
+        }
+        .button: active{
+        background-color: #3e8e41 ;
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+        }
+        </style>
 </head>
 
-<body>
+<body text="white">
+    <div class="div3">
+        <h1><i><u>Committee Details..!</u></i></h1>
     <table>
         <tr>
             <td>Name:</td>
@@ -19,10 +63,11 @@
             <td>Id:</td>
             <td><input type="text"></td>
         </tr>
-        <tr>
-            <td><button>Done</button></td>
-        </tr>
     </table>
+    <br>
+    <br>
+    <button class="button"><i>Submit</i></button>
+    </div>
 </body>
 
 </html>
