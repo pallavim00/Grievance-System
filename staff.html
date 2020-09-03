@@ -2,88 +2,45 @@
 <html>
 
 <head>
-    <style>
-        body{
-              background-image: url("bg2.jpg");
-              background-size:cover;
-              background-attachment: fixed;
-        }
-        .div3{ 
-               border: 5px outset whitesmoke;
-               text-align: center;
-               position:relative;
-               left: 80px;
-               top: -10px;
-               background:black;
-               width: 35%;
-               padding: 40px;
-               margin: 100px auto;
-        }
-        h1{
-            text-align:center;
-        }
-        #tab1{
-            margin-left:auto;
-            margin-right:auto;
-            padding:15p;
-        }
-        .button{
-        display: inline-block;
-        padding:10px  25px;
-        font-size: 24px
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: white;
-        background-color: blue;
-        border:none;
-        border-radius:15px;
-        box-shadow: 0 4px gray;
-        }
-        .button: hover{
-        background-color: #3e8e41;
-        }
-        .button: active{
-        background-color: #3e8e41 ;
-        box-shadow: 0 2px #666;
-        transform: translateY(2px);
-        }
-        </style>
+    <link rel="stylesheet" type="text/css" href="css1.css">
 </head>
 
-<body text="white">
+<body>
     <div class="div3">
-        <h1><i><u>Staff Details..!</u></i></h1>
+        <h1><i>Staff Details..!</i></h1>
     <table id="tab1">
         <tr>
-            <td>Name:</td>
-            <td><input type="text" placeholder="full name"></td>
+            <th>Name:</th>
+            <td><input type="text" id="name" placeholder="Full name"></td>
         </tr>
         <tr>
-            <td>Institute:</td>
-            <td><input type="text" placeholder="college name"></td>
+            <th>Institute:</th> 
+            <td><input type="text" id="iname" placeholder="Institute Name"></td>
         </tr>
         <tr>
-            <td>Department:</td>
-            <td><input type="text" placeholder="department"></td>
+            <th>Department:</th>
+            <td><input type="text" id="dname" placeholder="Department"></td>
         </tr>
         <tr>
-            <td>Email:</td>
-            <td><input type="text" placeholder="official email id"></td>
+            <th>Email:</th>
+            <td><input type="email" id="email" placeholder="Official Email Id"></td>
+        </tr>
+		<tr>
+            <th>Contact No. :</th>
+            <td><input type="tel" id="cno" placeholder="91-XXX-XXXX-XXX"></td>
         </tr>
         <tr>
-            <td>Password:</td>
-            <td><input type="password" placeholder="enter a strong password"></td>
+            <th>Password:</th>
+            <td><input type="password" id="pass1" placeholder="Enter a strong password"></td>
         </tr>
         <tr>
-            <td>Confirm Password:</td>
-            <td><input type="password" placeholder="enter same password"></td>
+            <th>Confirm Password:</th>
+            <td><input type="password" id="pass2" placeholder="Enter same password"></td>
         </tr>
     </table>
     <br>
     <br>
-    <button class="button"><i>Submit</i></button>
+    <button class="button" onclick="document.location='file:///C:/projects/Git-tutorial/Grievance-System/page2.html'"><i>Submit</i></button>
     </div>
 </body>
 
