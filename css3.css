@@ -66,3 +66,43 @@ li a:hover {
     background-color: #111111;
 }
 
+.div1 {
+   border: 3px outset whitesmoke;			
+   text-align: center;
+   background:#dcdcdc;
+   padding: 40px;
+   margin: 25px 50px;
+   
+   
+}
+#feat{	
+    font-size: 20;
+	text-align:center;
+	padding:15p;
+    width: 100%;
+	border-spacing: 10px;
+}
+th{
+	color:#ff0000;
+	background-color: #ffff90;
+}
+
+h1{
+	size: 32;
+	color:#008ee7;
+
+}
+
+footer{
+	background-color:#404040;
+	color: #ffffff;
+	text-align: center;
+}
+p{
+	font-family: Verdana;
+	size: 20;
+	text-align:justify;
+}
+#center{
+text-align:center;	
+}
