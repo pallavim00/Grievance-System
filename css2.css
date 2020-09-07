@@ -9,6 +9,14 @@ body{
 	   padding: 40px;
 	   margin: auto;
 }
+.fa {
+	font-size:100px;
+	cursor:pointer;
+	user-select:none;
+}
+.fa:hover {
+     color: darkblue;
+}
 h1{
 	text-align:center;
 }
