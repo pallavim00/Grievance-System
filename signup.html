@@ -6,41 +6,29 @@
 </head>
 <body>
 <div class="div3">
-<h1 ><i>Sign-up..!</i></h1>
-<table id="tab1">
-        <tr>
-            <th>Student Name : </th>
-            <td><input type="text" id="name" placeholder="Full name"></td>
-        </tr>
-        <tr>
-            <th>Institute Name : </th>
-            <td><input type="text" id="iname"placeholder="Institute Name"></td>
-        </tr>
-        <tr>
-            <th>Department Name : </th>
-            <td><input type="text" id="dname" placeholder="Department Name"></td>
-        </tr>
-        <tr>
-            <th>Email-Id : </th>
-            <td><input type="email" id="eail"placeholder="Email"></td>
-        </tr>
-		<tr>
-            <th>Contact No. : </th>
-            <td><input type="tel" id="cno" placeholder="91-XXX-XXXX-XXX"></td>
-        </tr>
-        <tr>
-            <th>Password : </th>
-            <td><input type="password" id="pass1"placeholder="Enter strong password"></td>
-        </tr>
-        <tr>
-            <th>Confirm password : </th>
-            <td><input type="password" id="pass2" placeholder="Enter same password" ></td>
-        </tr>
-</table>
+   <h1><u><i>Sign-up..!</i></u></h1>
+   <form method="post" action="connect1.php">
+    <label for="sname"><i>Student Name:</i></label>   
+    <input type="text" id="name1" placeholder="Full name" name="studentname"><br><br>
 
-<br>
-<br>
-<button class="button" onclick="document.location='file:///C:/projects/Git-tutorial/Grievance-System/page2.html'"><i>Submit</i></button>
+    <label for="iname"><i>Institute Name:</i></label>
+    <input type="text" id="name2" placeholder="college name" name="institutename"><br><br>
+
+    <label for="dname"><i>Department Name:</i></label> 
+    <input type="text" id="name3" placeholder="department name" name="departmentname"><br><br>
+
+    <label for="e-id"><i>Email-ID:</i></label>      
+    <input type="text" id="" placeholder="email-id" name="email-id"><br><br>
+
+    <label for="c-no"><i>Contact No:</i></label>  
+    <input type="text" id="" placeholder="contact no." name="contactno"><br><br>
+
+    <label for="password"><i>Password:</i></label>   
+    <input type="password" id="" placeholder="password" name="password"> <br><br>
+    
+    <input type="Submit" name="submit">
+   </form>
+   
 </div>
 </body>
 

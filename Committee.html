@@ -7,25 +7,22 @@
 
 <body text="white">
     <div class="div3">
-        <h1><i>Committee Details..!</i></h1>
-    <table id="tab1">
-        <tr>
-            <th>Name : </th>
-            <td><input type="text" id="name" placeholder="full name"></td>
-        </tr>
-        <tr>
-            <th>Institute : </th>
-            <td><input type="text" id="iname" placeholder="Institute Name"></td>
-        </tr>
-        <tr>
-            <th>Id : </th>
-            <td><input type="text" id="cid" placeholder="xxx-xxx"></td>
+        <h1><u><i>Committee Details..!</i></u></h1>
+        <form method="post" action="connect2.php">
+
+            <label for="name"><i>Name:</i></label>   
+            <input type="text" id="" placeholder="name" name="name"><br><br>
         
-        </tr>
-        </table>
-    <br>
-    <br>
-    <button class="button" onclick="document.location='file:///C:/projects/Git-tutorial/Grievance-System/page2.html'"><i>Submit</i></button>
+            <label for="iname"><i>Institute Name:</i></label>
+            <input type="text" id="" placeholder="college name" name="institutename"><br><br>
+        
+            <label for="id"><i>ID:</i></label> 
+            <input type="text" id="n" placeholder="id" name="id"><br><br>
+
+            <input type="Submit" name="submit">
+           </form>
+        <br>
+        <br>
     </div>
 </body>
 
