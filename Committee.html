@@ -9,23 +9,26 @@
     <div class="div3">
         <h1><u><i>Committee Details..!</i></u></h1>
         <form method="post" action="connect2.php">
-         <table>
+         <table id="tab1">
 		 <tr>
-            <th><label for="Name"><i>Name:</i></label></th>   
-            <td><input type="text" id="" placeholder="Name" name="name"><br><br></td>
-         </tr>
+            <th><i>Name:</i></th>   
+            <td><input type="text" id="name" placeholder="Your Name" name="name"></td>
+         </tr><br>
 		 <tr>
-            <label for="iname"><i>Institute Name:</i></label>
-            <input type="text" id="" placeholder="Institute Name" name="institutename"><br><br>
-         </tr>
+            <th><i>Institute Name:</i></th>
+            <td><input type="text" id="iname" placeholder="Your Institute Name" name="institutename"></td>
+         </tr><br>
 		 <tr>
-            <label for="id"><i>ID:</i></label> 
-            <input type="text" id="n" placeholder="xxx-xxx-xxx" name="id"><br><br>
-         </tr> 
-            <input type="Submit" name="submit">
+            <th><i>ID:</i></th> 
+            <td><input type="text" id="cid" placeholder="xxx-xxx-xxx" name="id"></td>
+         </tr><br> 
+		 </table>
+		 
+         <br>
+		 <button class="button" onclick="document.location='file:///C:/projects/Git-tutorial/Grievance-System/page2.html'"><i>Submit</i></button>
          
 		 </form>
-		 </table>
+		 
         <br>
         <br>
     </div>
