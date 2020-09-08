@@ -9,16 +9,9 @@ body{
 	   padding: 40px;
 	   margin: auto;
 }
-.fa {
-	font-size:50px;
-	cursor:pointer;
-	user-select:none;
-}
-.fa:hover {
-     color: darkblue;
-}
 h1{
 	text-align:center;
+	color: black;
 }
 #tab1{
 	margin-left:auto;
@@ -74,3 +67,40 @@ li a:hover {
     background-color: #111111;
 }
 
+
+
+
+
+Introdution Changes
+
+#feat{	
+    font-size: 20;
+	text-align:center;
+	padding:15p;
+    width: 100%;
+	border-spacing: 10px;
+}
+th{
+	color:#ff0000;
+	background-color: #ffff90;
+}
+
+h3{
+	size: 32;
+	color:#008ee7;
+
+}
+
+footer{
+	background-color:#404040;
+	color: #ffffff;
+	text-align: center;
+}
+p{
+	font-family: Verdana;
+	size: 20;
+	text-align:justify;
+}
+#center{
+text-align:center;	
+}

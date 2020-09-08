@@ -8,6 +8,7 @@ body{
 	   width: 35%;
 	   padding: 40px;
 	   margin: auto;
+	     <h1> Introduction</h1>
 }
 h1{
 	text-align:center;
@@ -66,15 +67,6 @@ li a:hover {
     background-color: #111111;
 }
 
-.div1 {
-   border: 3px outset whitesmoke;			
-   text-align: center;
-   background:#dcdcdc;
-   padding: 40px;
-   margin: 25px 50px;
-   
-   
-}
 #feat{	
     font-size: 20;
 	text-align:center;
