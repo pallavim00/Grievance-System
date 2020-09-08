@@ -7,13 +7,11 @@ body{
 .div3{ 
 	   border: 5px outset whitesmoke;			
 	   text-align: center;
-	   position:relative;
-	   left: 80px;
-	   top: -10px;
+	  
 	   background:black;
 	   width: 35%;
 	   padding: 40px;
-	   margin:auto;
+	   margin:100px auto;
 }
 h1{
 	text-align:center;
