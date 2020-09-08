@@ -7,21 +7,16 @@
 <body text="white">
 <div class="div3">
 <h1><b><i><u>Login..!</u></i.</b></h1>
-    <table id="tab1">
-        <tr>
-            <th>Email or Contact:</th>
-            <td><input type="text" placeholder="Email/Contact"> </td>
-        </tr>
-        <tr><br>
-            <th>Password:</th>
-            <td><input type="Password" placeholder="Password"> </td>
-        </tr>
-    </table>
-<br>
-<a href="" target="_self">forgotten email?</a>
-<br>
-<br>
-<button class="button" onclick="document.location='file:///C:/projects/Git-tutorial/Grievance-System/page2.html'"<i>Login</i></button>
+    <form method="post" action="connect3.php">
+
+        <label for="e-id"><i>Email-ID:</i></label>   
+        <input type="text" id="" placeholder="emai-id" name="email-id"><br><br>
+    
+        <label for="iname"><i>Password:</i></label>
+        <input type="password" id="" placeholder="password" name="password"><br><br>
+
+        <input type="Submit" name="submit">
+    </form>
 </div>
 </body>
 </html>
