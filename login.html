@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="css1.css">
+    <link rel="stylesheet" type="text/css" href="css1.css">
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("email");
+            var password = document.getElementById("pass");
+            if (username.value.trim() == "") {
+                alert("Please Enter A Email Address");
+                username.style.border = "solid 2px red";
+                return false;
+            } else if (password.value.trim() == "") {
+                alert("Please Enter A Password");
+                password.style.border = "solid 2px red";
+                return false;
+
+            } else if (password.value.trim().length < 8) {
+                alert("Password too short");
+                password.style.border = "solid 2px red";
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
 </head>
 
 <body text="white">
 
-<div class="div3" >
-	<h1><b><i><u>Login..!</u></i.</b></h1>
-    <form method="post" action="connect3.php">
-    <table id="tab1">
-		<tr>
-        <th><label for=""><i>Email-ID:</i></label></th>
-        <td><input type="text" id="email" placeholder="Registered Email-ID" name="email-id"></td>
-		</tr>
-		<tr>
-        <th><label for="pword"><i>Password:</i></label></th>
-        <td><input type="password" id="pass" placeholder="Password" name="password"></td>
-		</tr>
-    </table>
-    <br>
-        <button class="button">Submit</button>
-    </form>
-
-</div>
+    <div class="div3">
+        <h1><b><i><u>Login..!</u></i.</b></h1>
+        <form onsubmit="return validate()" method="post" action="connect3.php">
+            <table id="tab1">
+                <tr>
+                    <th><i>Email-ID:</i></th>
+                    <td><input type="text" id="email" placeholder="Registered Email-ID" name="email-id"></td>
+                </tr>
+                <tr>
+                    <th><i>Password:</i></th>
+                    <td><input type="password" id="pass" placeholder="Password" name="password"></td>
+                </tr>
+            </table>
+            <button class="button">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
