@@ -23,9 +23,22 @@
           </tr>
           <tr>
             <th><label for="p-word"><i>Password:</i></label></th>
-            <td><input type="password" id="sname" placeholder="password" name="password"></td>
+            <td><input type="password" id="pass" placeholder="password" name="password"></td>
          </tr> 
          </table>
+         <br>
+         <input type="checkbox" onclick="myfunction()">Show password
+            <script>
+                function myfunction() {
+                    var x = document.getElementById("pass");
+                    if(x.type === "password") {
+                        x.type = "text";
+                    }
+                    else {
+                        x.type = "password";
+                    }
+                }
+            </script>
          <br><br>
             <button class="button" href="">Submit</button>
          </form>
