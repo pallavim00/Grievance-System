@@ -34,15 +34,31 @@
         <form onsubmit="return validate()" method="post" action="connect3.php">
             <table id="tab1">
                 <tr>
-                    <th><i>Email-ID:</i></th>
-                    <td><input type="text" id="email" placeholder="Registered Email-ID" name="email-id"></td>
+                    <th><label for="Uname"><i>Username :</i></label></th>
+                    <td><input type="text" id="email" placeholder="Username" name="emailid"></td>
                 </tr>
                 <tr>
-                    <th><i>Password:</i></th>
+                    <th><label for="p-word"><i>Password:</i></label></th>
                     <td><input type="password" id="pass" placeholder="Password" name="password"></td>
                 </tr>
             </table>
-            <button class="button">Submit</button>
+            <br>
+            <input type="checkbox" onclick="myfunction()">Show password
+            <script>
+                function myfunction() {
+                    var x = document.getElementById("pass");
+                    if(x.type === "password") {
+                        x.type = "text";
+                    }
+                    else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+            <br>
+            
+            <br>
+            <button class="button" href="">Submit</button>
         </form>
     </div>
 </body>
