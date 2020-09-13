@@ -1,5 +1,11 @@
+*{
+padding : 0;
+margin : 0;
+box-sizing: border-box;
+}
 body{
 	  color:black;
+	  font-family: Arial, Helvetica, sans-serif;
 }
 .div3{ 
 	   border: 7px outset whitesmoke;			
@@ -40,38 +46,103 @@ h1{
 	box-shadow: 0 2px #666;
 	transform: translateY(2px);
 }
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333333;
-	}
-
-.abc {
-    float: left;
-}
-.xyz{
-	float: right;
+.menuBar{
+background:#3e78ff;
+text-align: center;
 }
 
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 25px;
+.menuBar ul{
+display: inline-flex;
+list-style: none;
+color: #333333;
+}
+
+.menuBar ul li{
+width: 120px;
+margin: 15px;
+padding: 15px;
+}
+
+.menuBar ul li a{
 	text-decoration: none;
+	padding-left:10px;
+	color: #fff;
+}
+.subMenu1 {
+	display: none;
 }
 
-li a:hover {
-    background-color: #111111;
+.subMenu2 {
+	display: none;
 }
 
+.active, .menuBar ul li:hover{
+	background: #6a5acd;
+	border-radius: 3px;
+	
+}
 
+.menuBar ul li:hover .subMenu1 {
+	display: block;
+	position: absolute;
+	background: grey;
+	margin-top: 15px;
+	margin-left: -15px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menuBar .fa{
+	margin-right:8px;
+}
+.menuBar ul li:hover .subMenu2 {
+	display: block;
+	position: absolute;
+	background: grey;
+	margin-top: 15px;
+	margin-left: -15px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
+.menuBar ul li:hover .subMenu1 ul {
+		display: block;
+		margin:10px;
+		
+}
 
+.menuBar ul li:hover .subMenu2 ul{
+		display: block;
+		margin:10px;
+}
 
-Introdution Changes
+.menuBar ul li:hover .subMenu1 ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius:0;
+	text-align:left;
+}
+
+.menuBar ul li:hover .subMenu2 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius:0;
+	text-align:left;
+
+}
+
+.menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+
+.menuBar ul li:hover .subMenu2 ul li:last-child {border-bottom:none;}
+
+.menuBar ul li:hover .subMenu1 ul li a:hover{
+	color:#000000;
+}
+
+.menuBar ul li:hover .subMenu2 ul li a:hover{
+	color:#000000;
+}
 
 #feat{	
     font-size: 20;
@@ -104,3 +175,4 @@ p{
 #center{
 text-align:center;	
 }
+

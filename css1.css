@@ -1,3 +1,9 @@
+*{
+padding : 0;
+margin : 0;
+box-sizing: border-box;
+}
+
 body{
 	  background-image: url("bg2.jpg");
 	  background-size:cover;
@@ -45,22 +51,29 @@ h1{
 	box-shadow: 0 2px #666;
 	transform: translateY(2px);
 }
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333333;
-	}
-
-.abc {
-    float: left;
+.menuBar{
+background:#3e8e41;
+text-align: center;
 }
+
+.menuBar ul{
+display: inline-flex;
+list-style: none;
+color: #333333;
+}
+
+.menuBar ul li{
+width: 120px;
+margin: 15px;
+padding: 5px;
+padding-left:10px;}
+
 .xyz{
 	float: right;
 }
 
-li a {
+.abc a {
+	float: left;
 	display: block;
 	color: white;
 	text-align: center;
@@ -68,7 +81,7 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
+.abc a:hover {
     background-color: #111111;
 }
 
