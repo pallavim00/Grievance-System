@@ -27,7 +27,7 @@ h1{
 .button{
 	display: inline-block;
 	padding:10px  25px;
-	font-size: 24px
+	font-size: 24px;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
@@ -47,25 +47,26 @@ h1{
 	transform: translateY(2px);
 }
 .menuBar{
-background:#3e78ff;
+background: #333333;
 text-align: center;
+padding: 15;
 }
 
 .menuBar ul{
 display: inline-flex;
 list-style: none;
-color: #333333;
+
 }
 
 .menuBar ul li{
 width: 120px;
 margin: 15px;
-padding: 15px;
+padding:15px;
+
 }
 
 .menuBar ul li a{
 	text-decoration: none;
-	padding-left:10px;
 	color: #fff;
 }
 .subMenu1 {
@@ -77,7 +78,7 @@ padding: 15px;
 }
 
 .active, .menuBar ul li:hover{
-	background: #6a5acd;
+	background: #3e78ff;
 	border-radius: 3px;
 	
 }
@@ -142,8 +143,11 @@ padding: 15px;
 
 .menuBar ul li:hover .subMenu2 ul li a:hover{
 	color:#000000;
+	
 }
-
+i{
+	color: white;
+}
 #feat{	
     font-size: 20;
 	text-align:center;
