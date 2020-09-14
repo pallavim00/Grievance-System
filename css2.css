@@ -141,11 +141,15 @@ padding:15px;
 
 .menuBar ul li:hover .subMenu2 ul li:last-child {border-bottom:none;}
 
-.menuBar ul li:hover .subMenu1 ul li a:hover{
+.menuBar ul li:hover .subMenu1 ul :hover{
+	background: #3e78ff;
+	border-radius: 3px;
 	color:#000000;
 }
 
-.menuBar ul li:hover .subMenu2 ul li a:hover{
+.menuBar ul li:hover .subMenu2 ul :hover{
+	background: #3e78ff;
+	border-radius: 3px;
 	color:#000000;
 	
 }
