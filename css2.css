@@ -11,7 +11,7 @@ body{
 	   border: 7px outset whitesmoke;			
 	   text-align: center;
 	   background:white;
-	   width: 35%;
+	   width: 45%;
 	   padding: 40px;
 	   margin: auto;
 }
@@ -24,6 +24,23 @@ h1{
 	margin-right:auto;
 	padding:15p;
 }
+
+#tab2{
+	margin-left:auto;
+	margin-right:auto;
+	padding:15p;
+}
+
+#tab2 th{
+		color: #c00000;
+		background:none;
+		text-align: left;
+		
+}
+tab2 td{
+	text-align:left;
+}
+
 .button{
 	display: inline-block;
 	padding:10px  25px;
@@ -171,9 +188,11 @@ th{
 h3{
 	size: 32;
 	color:#008ee7;
-
 }
 
+.italic{
+	color:black;
+	}
 footer{
 	background-color:#404040;
 	color: #ffffff;

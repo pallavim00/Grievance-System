@@ -9,58 +9,55 @@
 
 <body  class="main">
 	<br>
-	<h1 id="head"><b><i><u>Grievance System</u></i></b></h1><br>
+<h1 id="head"> <b><u><i class="italic"> Grievance System</i></u></b></h1>
+	<br>
 	<div class="menuBar">
-			<ul>
-				<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a  href="introduction.html" target="_self">Introduction</a></li>
-				<li> <i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">SoluBook</a> </li>
-				<li> <i class="fa fa-check-square-o" aria-hidden="true"></i><a href="outlook.html" target="_self">Outlook</a></li>
-				<li> <i class="fa fa-plus-square" aria-hidden="true"></i><a href="query.html" target="_self">Post</a></li>
-				<li> <i class="fa fa-cogs" aria-hidden="true"></i> <a href="">Settings</a>
-					<div class="subMenu1">
-						<ul>
-						<li> <i class="fa fa-bell-o" aria-hidden="true"></i> <a href="">Notifications</a> </li>
-						<li> <i class="fa fa-user-secret" aria-hidden="true"></i> <a href="">Privacy</a> </li>
-						<li> <i class="fa fa-lock" aria-hidden="true"></i> <a href="">Security</a> </li>
-						<li> <i class="fa fa-question-circle" aria-hidden="true"></i> <a href="">Help</a> </li>
-						</ul>
-					</div></li>
-				<li> <i class="fa fa-user" aria-hidden="true"></i><a href="">Username</a>		
-					<div class="subMenu2">
+		<ul>
+			<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a sref="introduction.html" target="_self">Introduction</a></li>
+			<li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">SoluBook</a> </li>
+			<li><i class="fa fa-check-square-o" aria-hidden="true"></i><a href="outlook.html" target="_self">Outlook</a></li>
+			<li><i class="fa fa-plus-square" aria-hidden="true"></i><a href="query.html" target="_self">Post</a></li>
+			<li><i class="fa fa-cogs" aria-hidden="true"></i><a href="">Settings</a>
+			<div class="subMenu1">
 					<ul>
-						<li> <i class="fa fa-address-card-o" aria-hidden="true"></i> <a href=""> Profile</a> </li>
-						<li> <i class="fa fa-history" aria-hidden="true"></i> <a href=""> History</a> </li>
+					<li> <i class="fa fa-bell-o" aria-hidden="true"></i> <a href="">Notifications</a> </li>
+					<li> <i class="fa fa-user-secret" aria-hidden="true"></i> <a href="">Privacy</a> </li>
+					<li> <i class="fa fa-lock" aria-hidden="true"></i> <a href="">Security</a> </li>
+					<li> <i class="fa fa-question-circle" aria-hidden="true"></i> <a href="">Help</a> </li>
 					</ul>
-					</div></li>
-	
-			</ul>
-	</div>
+			</div></li>
+			<li><i class="fa fa-user" aria-hidden="true"></i><a href="">Username</a>		
+				<div class="subMenu2">
+				<ul>
+					<li> <i class="fa fa-address-card-o" aria-hidden="true"></i> <a href=""> Profile</a> </li>
+					<li> <i class="fa fa-history" aria-hidden="true"></i> <a href=""> History</a> </li>
+				</ul>
+				</div></li>
+
+		</ul>
+</div>
 		<br>
   <br>
   <div class="div3">
-  <h1><b><i>Upload your query here</i></b></h1>
+  <h1><b><i  class="italic"><i style="color: black" class="fa fa-upload" aria-hidden="true"></i> Upload your query</i></b></h1>
   <hr>
-  <table id="tab1">
+  <table id="tab2">
           <tr>
               <th>College Name : </th>
-              <td><input type="text" id="name" placeholder="enter your college name"></td>
-          </tr>
-          <tr>
-              <th></th>
-              <td></td>
+              <td><textarea name="feedback" rows="3" cols="45" placeholder="Enter your college name."></textarea></td>
           </tr>
           <tr>
               <th>Query Title : </th>
-              <td><input type="text" id="qtname" placeholder="give title to your query"></td>
+              <td><textarea name="feedback" rows="3" cols="45" placeholder="Highlight by Mentioning Short Subject/ Title here."></textarea></td>
           </tr>
           <tr>
-              <th></th>
-              <td></td>
+              <th>Description:</th>
+              <td><textarea name="feedback" rows="5" cols="45" placeholder="Feel free to describe your Complain Details here."></textarea></td>
           </tr>
-          <tr>
-              <th>Query:</th>
-              <td><input type="text" id="qname" placeholder="type your query here"></td>
-          </tr>
+		  <tr>
+			  <th>Attach Images/files:</th>
+			  <td><input type="file" id="files" name="files" multiple><br></td>
+		  </tr>
   </table>
   <br>
   <br>
