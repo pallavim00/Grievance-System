@@ -1,27 +1,40 @@
-<?php 
-        
-           $servername = "localhost";
-           $username = "username";
-           $password = "password";
-           $dbname = "grievance-system";
+<?php
+session_start();
+$user = $_POST['username'];
+$pwd = $_POST['password'];
 
-        //creating connection
-        $conn = new mysqli('localhost','root','','grievance-system');
+if ($username && $password)
+{
+   $conn = mysql_connect("localhost","root","","grievance-system");
+   mysql_select_db("grievance-system") or die("couldn't find database");
+   $query = mysql_query("select * from users where username ='$username'");
+   $numrows = mysql_num_rows($query);
 
-        //checking connection
-        if($conn->connect_error)  {
-            die(' Connection Failed! : ' .$conn->connect_error);
-        }
-        else  {
-            mysqli_select_db($conn, 'sessionpractical');
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $q = "select count(username) from student where username = '$username' && password = '$password'";
-            if($q == 0 ) {
-               echo "wrong username/password";
-            }
-            else {
-               header('location: introduction.html');
-            }
-        }   
+   if($numrows!=0)
+   {
+      while($row = mysql_fetch_assoc($query))
+      {
+         $dbusername = $row['username'];
+         $dbpassword = $row['password'];
+      }
+      if($username == $dbusername && $password == $dbpassword)
+      {
+         echo 'Login successful';
+         $_SESSION['username']= $dbusername;
+      }
+      else
+      {
+         echo 'Incorrect Password';
+      }
+   }   
+   else
+   {
+      die("That username doesnt exist");
+   }
+}   
+else
+{
+   die("Please enter username and password");
+}
+mysql_close($conn);
 ?>
