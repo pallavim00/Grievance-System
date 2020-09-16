@@ -3,6 +3,7 @@
 <head>
     <title>SGSS SignUp</title>
     <link rel="stylesheet" type="text/css" href="css1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript">
         function signUpValidate() {
             var name = document.getElementById("sname");
@@ -80,12 +81,21 @@
                     <td><input type="text" id="cno" placeholder="Your working Contact No." name="contactno"></td>
                 </tr>
                 <tr>
-                    <th><label for="p-word"><i>Password</i></label></th>
-                    <td><input type="password" id="pass" placeholder="Strong Password" name="password"></td>
+                    <th><label for="p-word"><i>Password:</i></label></th>
+                    <td><input type="password" id="pass" placeholder="Strong Password" name="password">td>
                 </tr>
             </table>
 			<input type="checkbox" onclick="myfunction()">Show password
             <script>
+			
+			function mouseoverPass(obj) {
+				if( obj.type == "password")
+				var obj = document.getElementById('pass');
+				 return obj.type = "text";
+				else
+				  return obj.type = "password";
+				}
+
                 function myfunction() {
                     var x = document.getElementById("pass");
                     if (x.type === "password") {
