@@ -6,14 +6,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
-
 <body  class="main">
 	<br>
 <h1 id="head"> <b><u><i class="italic"> Grievance System</i></u></b></h1>
 	<br>
 	<div class="menuBar">
 		<ul>
-			<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a sref="introduction.html" target="_self">Introduction</a></li>
+			<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a href="introduction.html" target="_self">Introduction</a></li>
 			<li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">SoluBook</a> </li>
 			<li><i class="fa fa-check-square-o" aria-hidden="true"></i><a href="outlook.html" target="_self">Outlook</a></li>
 			<li><i class="fa fa-plus-square" aria-hidden="true"></i><a href="query.html" target="_self">Post</a></li>
@@ -40,25 +39,18 @@
   <br>
   <div class="div3">
   <h1><b><i  class="italic"><i style="color: black" class="fa fa-upload" aria-hidden="true"></i> Upload your query</i></b></h1>
-  <hr>
-  <table id="tab2">
-          <tr>
-              <th>College Name : </th>
-              <td><textarea name="feedback" rows="3" cols="45" placeholder="Enter your college name."></textarea></td>
-          </tr>
-          <tr>
-              <th>Query Title : </th>
-              <td><textarea name="feedback" rows="3" cols="45" placeholder="Highlight by Mentioning Short Subject/ Title here."></textarea></td>
-          </tr>
-          <tr>
-              <th>Description:</th>
-              <td><textarea name="feedback" rows="5" cols="45" placeholder="Feel free to describe your Complain Details here."></textarea></td>
-          </tr>
-		  <tr>
-			  <th>Attach Images/files:</th>
-			  <td><input type="file" id="files" name="files" multiple><br></td>
-		  </tr>
-  </table>
+  <br><hr><br>
+  <form>
+	  Select Level:
+	  <input type="radio" name="dept">Department
+	  <input type="radio" name="college">College
+	  <br><br>
+	  <label for="queryt">Query Title:</label>
+	  <input type="text" id="queryt" placeholder="subject/title" name="queryt">
+	  <br><br>
+	  <label for="queryd">Description:</label>
+	  <textarea rows="5" cols="30" id="comments" placeholder="describe your query here."></textarea>
+  </form>
   <br>
   <br>
   <button class="button">Submit</button> 
