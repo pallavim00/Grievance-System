@@ -1,75 +1,84 @@
 <html>
-<title>login page</title>
-<head>
-    <link rel="stylesheet" type="text/css" href="css1.css">
+  <title>login page</title>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css1.css" />
     <script type="text/javascript">
-        function validate() {
-            var username = document.getElementById("email");
-            var password = document.getElementById("pass");
-            if (username.value.trim() == "") {
-                alert("Please Enter A Username");
-                username.style.border = "solid 2px red";
-                return false;
-            } else if (password.value.trim() == "") {
-                alert("Please Enter A Password");
-                password.style.border = "solid 2px red";
-                return false;
-
-            } else if (password.value.trim().length < 8) {
-                alert("Password too short");
-                password.style.border = "solid 2px red";
-                return false;
-            } else {
-                return true;
-            }
+      function validate() {
+        var username = document.getElementById("email");
+        var password = document.getElementById("pass");
+        if (username.value.trim() == "") {
+          alert("Please Enter A Username");
+          username.style.border = "solid 2px red";
+          return false;
+        } else if (password.value.trim() == "") {
+          alert("Please Enter A Password");
+          password.style.border = "solid 2px red";
+          return false;
+        } else if (password.value.trim().length < 8) {
+          alert("Password too short");
+          password.style.border = "solid 2px red";
+          return false;
+        } else {
+          return true;
         }
+      }
     </script>
-</head>
-    
-<body text="white">
+  </head>
 
+  <body text="white">
     <div class="div3">
-        <h1><b><i><u>Login..!</u></i.</b></h1>
-        <br>
-        <form onsubmit="return validate()" method="post" action="connect3.php">
-            <table id="tab1">
-                <tr>
-                    <th><label for="Uname"><i>Username :</i></label></th>
-                    <td><input type="text" id="username" placeholder="Username" name="username"></td>
-                </tr>
-                <tr>
-                    <th><label for="p-word"><i>Password:</i></label></th>
-                    <td><input type="password" id="pass" placeholder="Password" name="password"></td>
-                </tr>
-            </table>
-            <br>
-            <input type="checkbox" onclick="myfunction()">Show password
-            <script>
-                function myfunction() {
-                    var x = document.getElementById("pass");
-                    if(x.type === "password") {
-                        x.type = "text";
-                    }
-                    else {
-                        x.type = "password";
-                    }
-                }
-            </script>
-            <br>
-            
-            <br>
-            <button class="button" href="">Login</button>
-        </form>
-    </div>
-</body>
+      <h1>
+        <b
+          ><i><u>Login..!</u></i></b
+        >
+      </h1>
+      <br />
+      <form onsubmit="return validate()" method="post" action="connect3.php">
+        <table id="tab1">
+          <tr>
+            <th>
+              <label for="Uname"><i>Username :</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                name="username"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="p-word"><i>Password:</i></label>
+            </th>
+            <td>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Password"
+                name="password"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <input type="checkbox" onclick="myfunction()" />Show password
+        <script>
+          function myfunction() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+        </script>
+        <br />
 
-<?php
-   if(isset($-POST['Login'])) {
-       $user = $_POST['username'];
-       $pwd = $_POST['password'];
-       $query = "SELECT * FROM STUDENT WHERE username ='$user' && password = '$pwd' ";
-       $data = mysqli_query($conn, $query);
-       $total= mysqli_num_rows($data);
-       echo $total;
-   }
-?>
+        <br />
+        <button class="button" href="">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

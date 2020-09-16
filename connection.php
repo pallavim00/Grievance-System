@@ -1,15 +1,15 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "grievance-system";
+    $host = "localhost";
+    $user = "root";
+    $password = '';
+    $db_name = "grievance-system";
 
-    $conn = mysqli_connect('localhost','root','','grievance-system');
+    $con = mysqli_connect($host, $user, $password, $db_name);
 
-    if($conn) {
-        echo "";
+    if(mysqli_connect_errno()) {  
+        die("Failed to connect with MySQL: ". mysqli_connect_error());  
     }
     else {
-        die("connection failed because ".mysqli_connect_error());
+        echo"MySQL Database Connection Successfully";
     }
-?>  
+?> 
