@@ -61,8 +61,8 @@ tab2 td{
 	color: white;
 	background-color: black;
 	border:none;
-	border-radius:15px;
-	box-shadow: 0 4px gray;
+	border-radius:10px;
+	box-shadow:0 4px gray;
 }
 .button: hover{
     background-color: #3e8e41;
