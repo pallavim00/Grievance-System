@@ -1,5 +1,6 @@
 <?php
    include('connection.php');
+   include('security.php');
    $username = $_POST['username'];
    $password = $_POST['password'];
    if ($username && $password) 

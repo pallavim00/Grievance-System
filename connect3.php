@@ -1,5 +1,9 @@
 <?php
-   include('connection.php');
+session_start();
+include('connection.php');
+include('security.php');
+if(isset($_POST['submit']))
+{
    $username = $_POST['username'];
    $password = $_POST['password'];
    if ($username && $password) 
@@ -16,11 +20,13 @@
    }
 
    if($numrows == 1) {  
+      $_SESSION['username'] = $username;
       header('location: introduction.html');
-      //echo "<h1><center> Login successful </center></h1>";
    }  
    else {  
       echo "<script type='text/javascript'>alert('Incorrect Username/Password')</script>";
       include("login.html");
    }
+}
+   
 ?>
