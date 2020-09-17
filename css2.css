@@ -15,6 +15,12 @@ body{
 	   padding: 40px;
 	   margin: auto;
 }
+li.abc{
+	float: left;
+}
+li.xyz{
+	float: right;
+}
 h1{
 	text-align:center;
 	color: black;
@@ -27,7 +33,9 @@ label{
 	margin-top: 12px;
 	clear: left:
 }
-input,textarea{ margin-top: 12px;}
+input,textarea{ 
+	margin-top: 12px;
+}
 #tab1{
 	margin-left:auto;
 	margin-right:auto;

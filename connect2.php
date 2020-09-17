@@ -21,7 +21,8 @@
            $stmt = $conn->prepare("insert into student(username, studentname, institutename, departmentname, emailid, contactno, password)values(?,?,?,?,?,?,?)");
            $stmt->bind_param("sssssis",$username, $studentname, $institutename, $departmentname, $emailid, $contactno, $password) ;
            $stmt->execute();
-           echo "Registration done Successfully...";
+           echo "<script type='text/javascript'>alert('Registered Successfully.Please Login to continue.')</script>";
+           include("login.html");
            $stmt->close();
            $conn->close();
        }

@@ -1,116 +1,142 @@
 <html>
-
-<head>
+  <head>
     <title>SGSS SignUp</title>
-    <link rel="stylesheet" type="text/css" href="css1.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript">
-        function signUpValidate() {
-            var name = document.getElementById("sname");
-            var user = document.getElementById("uname");
-            var institute = document.getElementById("iname");
-            var department = document.getElementById("dname");
-            var mail = document.getElementById("email");
-            var contact = document.getElementById("cno");
-            var password = document.getElementById("pass");
-            if (name.value.trim() == "") {
-                alert("Name is not entered");
-                name.style.border = "solid 2px red";
-                return false;
-            } else if (user.value.trim() == "") {
-                alert("User Name not entered");
-                user.style.border = "solid 2px red";
-                return false;
-            } else if (institute.value.trim() == "") {
-                alert("Institute Name not entered");
-                institute.style.border = "solid 2px red";
-                return false;
-            } else if (department.value.trim() == "") {
-                alert("Department Name not entered");
-                department.style.border = "solid 2px red";
-                return false;
-            } else if (mail.value.trim() == "") {
-                alert(" E-mail address not entered");
-                mail.style.border = "solid 2px red";
-                return false;
-            } else if (contact.value.trim() == "") {
-                alert("Contact Number not entered");
-                institute.style.border = "solid 2px red";
-                return false;
-            } else if (password.value.trim() == "") {
-                alert("Password not entered");
-                password.style.border = "solid 2px red";
-                return false;
-            } else if (paswword.value.trim().length < 8) {
-                alert("Please enter a stronger password");
-                return false;
-            } else {
-                return true;
-            }
-        }
-    </script>
-</head>
+    <link rel="stylesheet" type="text/css" href="css1.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"/>
+    <script src="signup.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="div3">
-        <h1><u><i>Sign-up..!</i></u></h1>
-        <br>
-        <form onsubmit="return signUpValidate()" method="post" action="connect1.php">
-            <table id="tab1">
-                <tr>
-                    <th><label for="sname"><i>Student Name:</i></label></th>
-                    <td><input type="text" id="sname" placeholder=" Your Full Name" name="studentname"></td>
-                </tr>
-                <tr>
-                    <th><label for="U-name"><i>UserName:</i></label></th>
-                    <td><input type="text" id="uname" placeholder=" Your Full Name" name="username"></td>
-                </tr>
-                <tr>
-                    <th><label for="Iname"><i>Institute Name:</i></label></th>
-                    <td><input type="text" id="iname" placeholder=" Your Institute Name" name="institutename"></td>
-                </tr>
-                <tr>
-                    <th><label for="DName"><i>Department Name:</i></label></th>
-                    <td><input type="text" id="dname" placeholder=" Your Department name" name="departmentname"></td>
-                </tr>
-                <tr>
-                    <th><label for="e-id"><i>Email-ID:</i></label></th>
-                    <td><input type="text" id="email" placeholder="Your working Email-id" name="emailid"></td>
-                </tr>
-                <tr>
-                    <th><label for="Cno"><i>Contact No:</i></label></th>
-                    <td><input type="text" id="cno" placeholder="Your working Contact No." name="contactno"></td>
-                </tr>
-                <tr>
-                    <th><label for="p-word"><i>Password:</i></label></th>
-                    <td><input type="password" id="pass" placeholder="Strong Password" name="password"></td>
-                </tr>
-            </table>
-			<input type="checkbox" onclick="myfunction()">Show password
-            <script>
-			
-			function mouseoverPass(obj) {
-				if( obj.type == "password")
-				var obj = document.getElementById('pass');
-				 return obj.type = "text";
-				else
-				  return obj.type = "password";
-				}
+      <h1>
+        <u><i>Sign-up..!</i></u>
+      </h1>
+      <br />
+      <form
+        onsubmit="return signUpValidate()"
+        method="post"
+        action="connect1.php"
+      >
+        <table id="tab1">
+          <tr>
+            <th>
+              <label for="sname"><i>Student Name:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="sname"
+                placeholder=" Your Full Name"
+                name="studentname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="U-name"><i>UserName:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="uname"
+                placeholder=" Your Full Name"
+                name="username"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="Iname"><i>Institute Name:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="iname"
+                placeholder=" Your Institute Name"
+                name="institutename"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="DName"><i>Department Name:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="dname"
+                placeholder=" Your Department name"
+                name="departmentname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="e-id"><i>Email-ID:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="email"
+                placeholder="Your working Email-id"
+                name="emailid"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="Cno"><i>Contact No:</i></label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="cno"
+                placeholder="Your working Contact No."
+                name="contactno"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="p-word"><i>Password:</i></label>
+            </th>
+            <td>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Strong Password"
+                name="password"
+              />
+            </td>
+          </tr>
+        </table>
+        <input type="checkbox" onclick="myfunction()" />Show password
+        <script>
 
-                function myfunction() {
-                    var x = document.getElementById("pass");
-                    if (x.type === "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-                }
-            </script>
-            <br><br>
-            <button class="button" href="">Submit</button>
-        </form>
+          function mouseoverPass(obj) {
+          	if( obj.type == "password")
+          	var obj = document.getElementById('pass');
+          	 return obj.type = "text";
+          	else
+          	  return obj.type = "password";
+          	}
 
+                       function myfunction() {
+                           var x = document.getElementById("pass");
+                           if (x.type === "password") {
+                               x.type = "text";
+                           } else {
+                               x.type = "password";
+                           }
+                       }
+        </script>
+        <br /><br />
+        <button class="button" href="">Submit</button>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
