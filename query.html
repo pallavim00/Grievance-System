@@ -13,7 +13,7 @@
 	<div class="menuBar">
 		<ul>
 			<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a href="introduction.html" target="_self">Introduction</a></li>
-			<li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">SoluBook</a> </li>
+			<li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">Solbook</a> </li>
 			<li><i class="fa fa-check-square-o" aria-hidden="true"></i><a href="outlook.html" target="_self">Outlook</a></li>
 			<li><i class="fa fa-plus-square" aria-hidden="true"></i><a href="query.html" target="_self">Post</a></li>
 			<li id="xyz"><i class="fa fa-user" aria-hidden="true"></i><a href="">Username</a>		
@@ -42,19 +42,26 @@
   <h1><b><i  class="italic"><i style="color: black" class="fa fa-upload" aria-hidden="true"></i> Upload your query</i></b></h1>
   <br><hr><br>
   <form>
-	  <label>Select Level:</label>
-	  <input type="radio" name="dept">Department 
-	  <input type="radio" name="college" style="margin-left:2.5em">College
-	  <br><br>
-	  <label for="queryt">Query Title:</label>
-	  <input type="text" id="queryt" placeholder="subject/title" name="queryt">
-	  <br><br>
-	  <label for="queryd">Description:</label>
-	  <textarea rows="5" cols="30" id="comments" placeholder="describe your query here."></textarea>
+  <table id="tab3">
+  <tr>
+	  <th><label>Select Level:</label></th>
+	  <td><input type="radio" name="dept">  Department 
+	  <input type="radio" name="college" style="margin-left:2.5em">  College</td>
+	  </tr>
+	  <tr>
+	  <th><label for="queryt">Query Title:</label></th>
+	  <td><input type="text" id="queryt" placeholder="subject/title" name="queryt"></td>
+	  </tr>
+	  <tr>
+	  <th><label for="queryd">Description:</label></th>
+	  <td><textarea rows="5" cols="30" id="comments" placeholder="describe your query here."></textarea></td>
+	  </tr>
+	  </table>
   </form>
   <br>
   <br>
-  <button class="button">Submit</button> 
+  
+  <button class="button2">Submit</button> 
   </div>
   </body>
 </html>
