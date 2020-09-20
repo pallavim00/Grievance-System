@@ -3,6 +3,11 @@ padding : 0;
 margin : 0;
 box-sizing: border-box;
 }
+.flexcontainer{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
 body{
 	  color:black;
 	  font-family: Arial, Helvetica, sans-serif;
@@ -85,6 +90,8 @@ head{
 	color: #000000;
 }
 .menuBar{
+	display: flex;
+	justify-content: center;
 background: #333333;
 text-align: center;
 padding: 15;
