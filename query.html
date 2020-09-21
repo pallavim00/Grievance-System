@@ -7,6 +7,7 @@
 </head>
 
 <body  class="main">
+	<form method="POST" action="connect5.php">
 	<br>
 <h1 id="head"> <b><u><i class="italic"> Grievance System</i></u></b></h1>
 	<br>
@@ -33,7 +34,13 @@
 					<li> <i class="fa fa-question-circle" aria-hidden="true"></i> <a href="">Help</a> </li>
 					</ul>
 			</div></li>
-			<li id="xyz"><i class="fa fa-sign-out"></i><a target="_self">Logout</a></li>
+			<li id="xyz"><i class="fa fa-sign-out"></i><a target="_self">Logout</a>
+			    <div class="subMenu2">
+					<ul>
+						<li><button><i class="fa fa-sign-out" aria-hidden="true"></i>Sign-Out</button></li>
+					</ul>
+				</div>
+			</li>	
 		</ul>
 </div>
 		<br>
@@ -41,20 +48,22 @@
   <div class="div3">
   <h1><b><i  class="italic"><i style="color: black" class="fa fa-upload" aria-hidden="true"></i> Upload your query</i></b></h1>
   <br><hr><br>
-  <form>
+  <form method="POST" action="query_post.php">
 	  <label>Select Level:</label>
-	  <input type="radio" name="dept">Department 
-	  <input type="radio" name="college" style="margin-left:2.5em">College
+	  <input type="radio" name="level">Department 
+	  <input type="radio" name="level" style="margin-left:2.5em">College
 	  <br><br>
 	  <label for="queryt">Query Title:</label>
-	  <input type="text" id="queryt" placeholder="subject/title" name="queryt">
+	  <input type="text" id="queryt" placeholder="subject/title" name="query_title">
 	  <br><br>
 	  <label for="queryd">Description:</label>
-	  <textarea rows="5" cols="30" id="comments" placeholder="describe your query here."></textarea>
+	  <textarea rows="5" cols="30" id="comments" name="description" placeholder="describe your query here."></textarea>
+	  <br><br>
+	  <input type="button" name="submit_btn" value="Post">
   </form>
   <br>
-  <br>
-  <button class="button">Submit</button> 
+  <br> 
   </div>
+  </form>
   </body>
 </html>
