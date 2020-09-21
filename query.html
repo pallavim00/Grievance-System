@@ -7,7 +7,7 @@
 </head>
 
 <body  class="main">
-	<form method="POST" action="connect5.php">
+<form method="POST" action="connect5.php">
 	<br>
 <h1 id="head"> <b><u><i class="italic"> Grievance System</i></u></b></h1>
 	<br>
@@ -49,20 +49,20 @@
   <h1><b><i  class="italic"><i style="color: black" class="fa fa-upload" aria-hidden="true"></i> Upload your query</i></b></h1>
   <br><hr><br>
 
-    <form>
+    <form method="POST" action="query_post.php">
     <table id="tab3">
     <tr>
 	  <th><label>Select Level:</label></th>
-	  <td><input type="radio" name="dept">  Department 
-	  <input type="radio" name="college" style="margin-left:2.5em">  College</td>
+	  <td><input type="radio" name="level">  Department 
+	  <input type="radio" name="level" style="margin-left:2.5em">  College</td>
 	  </tr>
 	  <tr>
 	  <th><label for="queryt">Query Title:</label></th>
-	  <td><input type="text" id="queryt" placeholder="subject/title" name="queryt"></td>
+	  <td><input type="text" id="queryt" placeholder="subject/title" name="query_title"></td>
 	  </tr>
 	  <tr>
 	  <th><label for="queryd">Description:</label></th>
-	  <td><textarea rows="5" cols="30" id="comments" placeholder="describe your query here."></textarea></td>
+	  <td><textarea rows="5" cols="30" id="comments" name="description" placeholder="describe your query here."></textarea></td>
 	  </tr>
 	</table>
 	<button class="button2" name="submit_btn">Submit</button>
@@ -70,6 +70,6 @@
     <br>
     <br>
 </div>
-  </form>
+</form>
   </body>
 </html>

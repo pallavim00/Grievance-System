@@ -1,20 +1,15 @@
 <?php
     include('connection.php');
-    $host = "localhost";
-    $user = "root";
-    $password = '';
-    $db_name = "grievance-system";
-    $con = mysqli_connect($host, $user, $password, $db_name);
-    if(!$con)
+    include_once 'connection.php';
+    if(isset($_POST['submit_btn']))
     {
-        echo 'not connected';
-    }
         $level = $_POST['level'];
         $query_title = $_POST['query_title'];
         $description = $_POST['description'];
         echo '$query_title';
        
-       $sql = "INSERT INTO query_post('level', 'query_title', 'description') values ('$level', '$query_title', '$description')";
+       $sql = "INSERT INTO query_post(level, query_title, description) values ('$level', '$query_title', '$description');";
+       mysqli_query($con,$sql);
        if(!mysqli_query($con,$sql))
        {
            echo 'not inserted';
@@ -24,4 +19,5 @@
         echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
        }
        header("location:query.html");
+    }   
 ?>
