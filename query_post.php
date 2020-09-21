@@ -18,4 +18,5 @@
         echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
        }
        header("location:query.html");
+    }   
 ?>
