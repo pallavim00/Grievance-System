@@ -2,27 +2,7 @@
   <title>login page</title>
   <head>
     <link rel="stylesheet" type="text/css" href="css1.css" />
-    <script type="text/javascript">
-      function validate() {
-        var username = document.getElementById("email");
-        var password = document.getElementById("pass");
-        if (username.value.trim() == "") {
-          alert("Please Enter A Username");
-          username.style.border = "solid 2px red";
-          return false;
-        } else if (password.value.trim() == "") {
-          alert("Please Enter A Password");
-          password.style.border = "solid 2px red";
-          return false;
-        } else if (password.value.trim().length < 8) {
-          alert("Password too short");
-          password.style.border = "solid 2px red";
-          return false;
-        } else {
-          return true;
-        }
-      }
-    </script>
+    <script src="login.js"></script>
   </head>
 
   <body text="white">
@@ -81,7 +61,7 @@
         <br /><br />
         <button class="button" name="submit">Login</button>
       </form>
-      <br>
+      <br />
     </div>
   </body>
 </html>
