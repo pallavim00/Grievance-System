@@ -9,6 +9,4 @@
     header("location:login.html");
   }
   
-  
-  
 ?>
