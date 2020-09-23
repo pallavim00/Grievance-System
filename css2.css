@@ -3,11 +3,6 @@ padding : 0;
 margin : 0;
 box-sizing: border-box;
 }
-.flexcontainer{
-	display:flex;
-	justify-content: center;
-	flex-direction: column;
-}
 body{
 	  color:black;
 	  font-family: Arial, Helvetica, sans-serif;
@@ -20,12 +15,7 @@ body{
 	   padding: 40px;
 	   margin: auto;
 }
-li.abc{
-	float: left;
-}
-li.xyz{
-	float: right;
-}
+
 h1{
 	text-align:center;
 	color: black;
@@ -41,6 +31,7 @@ label{
 input,textarea{ 
 	margin-top: 12px;
 }
+
 #tab1{
 	margin-left:auto;
 	margin-right:auto;
@@ -75,6 +66,10 @@ input,textarea{
 }
 tab2 td{
 	text-align:left;
+}
+
+.tab {
+    tab-size:10; 
 }
 
 .button{
@@ -126,12 +121,11 @@ tab2 td{
 	transform: translateY(4px);
 }
 
-head{
+#head{
 	color: #000000;
 }
+
 .menuBar{
-	display: flex;
-	justify-content: center;
 background: #333333;
 text-align: center;
 }
@@ -139,7 +133,15 @@ text-align: center;
 .menuBar ul{
 display: inline-flex;
 list-style: none;
+font-size: 16px;
 
+}
+
+.menuBar ul li .abc{
+	float: left;
+}
+.menuBar ul li .xyz{
+	float: right;
 }
 
 .menuBar ul li{
@@ -154,10 +156,6 @@ padding:15px;
 	color: #fff;
 }
 .subMenu1 {
-	display: none;
-}
-
-.subMenu2 {
 	display: none;
 }
 
@@ -177,14 +175,6 @@ padding:15px;
 .menuBar .fa{
 	margin-right:8px;
 }
-.menuBar ul li:hover .subMenu2 {
-	display: block;
-	position: absolute;
-	background: grey;
-	margin-top: 15px;
-	margin-left: -15px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
 
 .menuBar ul li:hover .subMenu1 ul {
 		display: block;
@@ -192,33 +182,16 @@ padding:15px;
 		
 }
 
-.menuBar ul li:hover .subMenu2 ul{
-		display: block;
-		margin:10px;
-}
-
 .menuBar ul li:hover .subMenu1 ul li {
-	width: 150px;
+	width: 135px;
 	padding: 10px;
 	border-bottom: 1px dotted #fff;
 	background: transparent;
 	border-radius:0;
 	text-align:left;
-}
-
-.menuBar ul li:hover .subMenu2 ul li{
-	width: 150px;
-	padding: 10px;
-	border-bottom: 1px dotted #fff;
-	background: transparent;
-	border-radius:0;
-	text-align:left;
-
 }
 
 .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
-
-.menuBar ul li:hover .subMenu2 ul li:last-child {border-bottom:none;}
 
 .menuBar ul li:hover .subMenu1 ul :hover{
 	background: #3e78ff;
@@ -226,15 +199,10 @@ padding:15px;
 	color:#000000;
 }
 
-.menuBar ul li:hover .subMenu2 ul :hover{
-	background: #3e78ff;
-	border-radius: 3px;
-	color:#000000;
-	
-}
 i{
 	color: white;
 }
+
 #feat{	
     font-size: 20;
 	text-align:center;
@@ -242,6 +210,7 @@ i{
     width: 100%;
 	border-spacing: 10px;
 }
+
 th{
 	color:#ff0000;
 	background-color: #ffff90;
@@ -255,17 +224,21 @@ h3{
 .italic{
 	color:black;
 	}
+
 footer{
 	background-color:#404040;
 	color: #ffffff;
 	text-align: center;
 }
+
 p{
 	font-family: Verdana;
 	size: 20;
 	text-align:justify;
 }
+ 
 #center{
 text-align:center;	
 }
 
+@media (max-width: 700px)
