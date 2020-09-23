@@ -183,7 +183,7 @@ padding:15px;
 }
 
 .menuBar ul li:hover .subMenu1 ul li {
-	width: 135px;
+	width: 140px;
 	padding: 10px;
 	border-bottom: 1px dotted #fff;
 	background: transparent;
