@@ -8,7 +8,10 @@
     unset($_SESSION['username']);
     header("location:login.html");
   }
-  
-  
+
+  if(isset($_POST['submit_btn']))
+  {
+    include('query_post.php');
+  }
   
 ?>
