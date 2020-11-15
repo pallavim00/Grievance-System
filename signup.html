@@ -1,15 +1,16 @@
 <html>
   <head>
     <title>SGSS SignUp</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/css1.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"/>
-    <script src="signup.js"></script>
-  </head>                           
+      crossorigin="anonymous"
+    />
+    <script src="./js/signup.js"></script>
+  </head>
 
   <body>
     <div class="div3">
@@ -20,7 +21,7 @@
       <form
         onsubmit="return signUpValidate()"
         method="post"
-        action="connect1.php"
+        action="./assets/php/connect1.php"
       >
         <table id="tab1">
           <tr>
@@ -117,26 +118,26 @@
         </table>
         <input type="checkbox" onclick="myfunction()" />Show password
         <script>
-
           function mouseoverPass(obj) {
-          	if( obj.type == "password")
-          	var obj = document.getElementById('pass');
-          	 return obj.type = "text";
-          	else
-          	  return obj.type = "password";
-          	}
+            if (obj.type == "password") {
+              var obj = document.getElementById("pass");
+              return (obj.type = "text");
+            } else {
+              return (obj.type = "password");
+            }
+          }
 
-                       function myfunction() {
-                           var x = document.getElementById("pass");
-                           if (x.type === "password") {
-                               x.type = "text";
-                           } else {
-                               x.type = "password";
-                           }
-                       }
+          function myfunction() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
         </script>
         <br /><br />
-        <button class="button" >Submit</button>
+        <button class="button">Submit</button>
       </form>
     </div>
   </body>
