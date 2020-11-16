@@ -1,3 +1,9 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    }
+    
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	*{
@@ -26,7 +32,79 @@
 			text-align:center;
             size: 28px;
             
-		}
+        }
+        
+        .menuBar{
+            background: #404040;
+            text-align: center;
+            padding: 10px;
+            }
+            
+            .menuBar ul{
+            display: inline-flex;
+            list-style: none;
+            font-size: 16px;
+            
+            }
+           
+            .menuBar ul li{
+            width: 135px;
+            margin: 15px;
+            padding:10px;
+            
+            }
+            
+            .menuBar ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .subMenu1 {
+                display: none;
+            }
+            
+            .menuBar ul li:hover{
+                background:  #3e78ff;
+                border-radius: 3px;	
+            }
+            
+            .menuBar ul li:hover .subMenu1 {
+                display: block;
+                position: absolute;
+                background: grey;
+                margin-top: 15px;
+                margin-left: -15px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .menuBar .fa{
+                margin-right:8px;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul {
+                    display: block;
+                    margin:10px;
+                    
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li {
+                width: 140px;
+                padding: 10px;
+                border-bottom: 1px dotted #fff;
+                background: transparent;
+                border-radius:0;
+                text-align:left;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+            
+            .menuBar ul li:hover .subMenu1 ul :hover{
+                background: #3e78ff;
+                border-radius: 3px;
+                color:#000000;
+            }
+            
+            i{
+                color: white;
+            }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -61,9 +139,150 @@
 		.far fa-comment-dots{
 			color:#000000;
 			text-align:center;
-            size: 30px;
+            size: 30px;   
+        }
+
+        .menuBar{
+            background: #404040;
+            text-align: center;
+            }
             
-		}
+            .menuBar ul{
+            display: inline-flex;
+            list-style: none;
+            font-size: 16px;
+            
+            }
+           
+            .menuBar ul li{
+            width: 135px;
+            margin: 15px;
+            padding:10px;
+            
+            }
+            
+            .menuBar ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .subMenu1 {
+                display: none;
+            }
+            
+            .menuBar ul li:hover{
+                background:  #3e78ff;
+                border-radius: 3px;	
+            }
+            
+            .menuBar ul li:hover .subMenu1 {
+                display: block;
+                position: absolute;
+                background: grey;
+                margin-top: 15px;
+                margin-left: -15px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .menuBar .fa{
+                margin-right:8px;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul {
+                    display: block;
+                    margin:10px;
+                    
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li {
+                width: 140px;
+                padding: 10px;
+                border-bottom: 1px dotted #fff;
+                background: transparent;
+                border-radius:0;
+                text-align:left;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+            
+            .menuBar ul li:hover .subMenu1 ul :hover{
+                background: #3e78ff;
+                border-radius: 3px;
+                color:#000000;
+            }
+            
+            i{
+                color: white;
+            }
+        
+        .menuBar{
+            background: #404040;
+            text-align: center;
+            }
+            
+            .menuBar ul{
+            display: inline-flex;
+            list-style: none;
+            font-size: 16px;
+            
+            }
+           
+            .menuBar ul li{
+            width: 135px;
+            margin: 15px;
+            padding:10px;
+            
+            }
+            
+            .menuBar ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .subMenu1 {
+                display: none;
+            }
+            
+            .menuBar ul li:hover{
+                background:  #3e78ff;
+                border-radius: 3px;	
+            }
+            
+            .menuBar ul li:hover .subMenu1 {
+                display: block;
+                position: absolute;
+                background: grey;
+                margin-top: 15px;
+                margin-left: -15px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .menuBar .fa{
+                margin-right:8px;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul {
+                    display: block;
+                    margin:10px;
+                    
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li {
+                width: 140px;
+                padding: 10px;
+                border-bottom: 1px dotted #fff;
+                background: transparent;
+                border-radius:0;
+                text-align:left;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+            
+            .menuBar ul li:hover .subMenu1 ul :hover{
+                background: #3e78ff;
+                border-radius: 3px;
+                color:#000000;
+            }
+            
+            i{
+                color: white;
+            }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -99,7 +318,78 @@
 			color:#000000;
 			text-align:center;
             size: 32px;            
-		}
+        }
+        
+        .menuBar{
+            background: #404040;
+            text-align: center;
+            }
+            
+            .menuBar ul{
+            display: inline-flex;
+            list-style: none;
+            font-size: 16px;
+            
+            }
+           
+            .menuBar ul li{
+            width: 135px;
+            margin: 15px;
+            padding:10px;
+            
+            }
+            
+            .menuBar ul li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .subMenu1 {
+                display: none;
+            }
+            
+            .menuBar ul li:hover{
+                background:  #3e78ff;
+                border-radius: 3px;	
+            }
+            
+            .menuBar ul li:hover .subMenu1 {
+                display: block;
+                position: absolute;
+                background: grey;
+                margin-top: 15px;
+                margin-left: -15px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .menuBar .fa{
+                margin-right:8px;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul {
+                    display: block;
+                    margin:10px;
+                    
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li {
+                width: 140px;
+                padding: 10px;
+                border-bottom: 1px dotted #fff;
+                background: transparent;
+                border-radius:0;
+                text-align:left;
+            }
+            
+            .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+            
+            .menuBar ul li:hover .subMenu1 ul :hover{
+                background: #3e78ff;
+                border-radius: 3px;
+                color:#000000;
+            }
+            
+            i{
+                color: white;
+            }
 	
 }
 
@@ -137,6 +427,77 @@
         text-align:center;
         size: 36px;        
     }
+
+    .menuBar{
+        background: #404040;
+        text-align: center;
+        }
+        
+        .menuBar ul{
+        display: inline-flex;
+        list-style: none;
+        font-size: 16px;
+        
+        }
+       
+        .menuBar ul li{
+        width: 135px;
+        margin: 15px;
+        padding:10px;
+        
+        }
+        
+        .menuBar ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .subMenu1 {
+            display: none;
+        }
+        
+        .menuBar ul li:hover{
+            background:  #3e78ff;
+            border-radius: 3px;	
+        }
+        
+        .menuBar ul li:hover .subMenu1 {
+            display: block;
+            position: absolute;
+            background: grey;
+            margin-top: 15px;
+            margin-left: -15px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .menuBar .fa{
+            margin-right:8px;
+        }
+        
+        .menuBar ul li:hover .subMenu1 ul {
+                display: block;
+                margin:10px;
+                
+        }
+        
+        .menuBar ul li:hover .subMenu1 ul li {
+            width: 140px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius:0;
+            text-align:left;
+        }
+        
+        .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+        
+        .menuBar ul li:hover .subMenu1 ul :hover{
+            background: #3e78ff;
+            border-radius: 3px;
+            color:#000000;
+        }
+        
+        i{
+            color: white;
+        }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
