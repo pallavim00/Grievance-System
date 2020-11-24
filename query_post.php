@@ -1,24 +1,28 @@
 <?php
     include('connection.php');
-    include_once 'connection.php';
-    if(isset($_POST['submit_btn']))
+    // include_once 'connection.php';
+     
+    if(isset($_POST['submit_btn']) && $_POST['submit_btn'] == "post_form")
     {
         $level = $_POST['level'];
-        $query_title = $_POST['query_title'];
-        $description = $_POST['description'];
-    
-        
-        $sql = $con->prepare("insert into query_post(level, query_title, description)values(?,?,?)");
-        $sql->bind_param("sss",$level, $query_title, $description);
-        $sql->execute();        
-        if(!mysqli_query($con,$sql))
+        $query_title = strip_tags($_POST['query_title']);
+        $description = strip_tags($_POST['description']);
+        $current_college = (int)$_SESSION['id_college'];
+
+        $sql = "INSERT INTO query_post (level, query_title, description, id_college)values('".$level."', '".$query_title."', '".$description."',".$current_college.")";
+        if (mysqli_query($con, $sql)) 
         {
-            echo 'not inserted';
-        }
-        else
+            $_SESSION['msgtype'] = "success";
+            $_SESSION['msg'] = "Query posted successfully";
+            // echo "New record created successfully";
+        } 
+        else 
         {
-            echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
+            $_SESSION['msgtype'] = "error";
+            $_SESSION['msg'] = "Some error occured while posting query";
+            echo "Error: " . $sql . "<br>" . mysqli_error($con);
+            die;
         }
-        header("location:post.html");
+        header("location:post.php");
     }   
 ?>

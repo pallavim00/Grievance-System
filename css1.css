@@ -193,3 +193,11 @@ padding-left:10px;}
 }
 
 
+
+.success {color:#2bff76;text-align:center;}	
+.error {color:red;text-align:center;}
+.msg {    background: #000;
+    width: 250px;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 19px 0px 0 550px;}

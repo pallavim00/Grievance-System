@@ -10,6 +10,6 @@
         die("Failed to connect with MySQL: ". mysqli_connect_error());  
     }
     else {
-        echo"MySQL Database Connection Successfully";
+        //echo"MySQL Database Connection Successfully";
     }
 ?> 

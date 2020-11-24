@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if($_SESSION['username'])
+if((!isset($_SESSION['username']) && $_SESSION['username'] == "") ||  count($_SESSION) < 1)
 {
-    header('location:login.html');
+    header('location:login.php');
 }
 
 ?>

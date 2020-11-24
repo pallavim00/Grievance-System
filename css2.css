@@ -381,3 +381,6 @@ text-align:center;
 }
 }
 
+
+.success {color:#2bff76;text-align:center;}	
+.error {color:red;text-align:center;}
