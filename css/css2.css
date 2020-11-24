@@ -32,10 +32,10 @@ h1{
 	box-shadow: 0 4px gray;
 }
 .button: hover{
-    background-color: #3e8e41;
+    background-color: #0f36e2;
 }
 .button: active{
-	background-color: #3e8e41 ;
+	background-color: #0f36e2 ;
 	box-shadow: 0 2px #666;
 	transform: translateY(2px);
 }
@@ -44,7 +44,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333333;
+	background-color: #0f36e2;
 	}
 
 .abc {
@@ -54,14 +54,14 @@ ul {
 	float: right;
 }
 
-li a {
+li abc {
 	display: block;
-	color: white;
+	color: #0f36e2;
 	text-align: center;
 	padding: 25px;
 	text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111111;
+li abc:hover {
+    background-color: #095af1;
 }

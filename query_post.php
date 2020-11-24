@@ -6,18 +6,20 @@
         $level = $_POST['level'];
         $query_title = $_POST['query_title'];
         $description = $_POST['description'];
-        echo '$query_title';
-       
-       $sql = "INSERT INTO query_post(level, query_title, description) values ('$level', '$query_title', '$description');";
-       mysqli_query($con,$sql);
-       if(!mysqli_query($con,$sql))
-       {
-           echo 'not inserted';
-       }
-       else
-       {
-        echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
-       }
-       header("location:query.html");
+    
+        
+        $sql = $con->prepare("INSERT INTO query_post(level, query_title, description)values(?,?,?)");
+        $sql->bind_param("sss",$level, $query_title, $description);
+        $sql->execute();
+        mysqli_query($con,$sql);
+        if(!mysqli_query($con,$sql))
+        {
+            echo 'not inserted';
+        }
+        else
+        {
+            echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
+        }
+        header("location:query.html");
     }   
 ?>
