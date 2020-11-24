@@ -8,9 +8,9 @@
         $description = $_POST['description'];
     
         
-        $sql = $con->prepare("INSERT INTO query_post(level, query_title, description) values(?,?,?)");
+        $sql = $con->prepare("insert into query_post(level, query_title, description)values(?,?,?)");
         $sql->bind_param("sss",$level, $query_title, $description);
-        $sql->execute();
+        $sql->execute();        
         if(!mysqli_query($con,$sql))
         {
             echo 'not inserted';
@@ -19,6 +19,6 @@
         {
             echo "<script type='text/javascript'>alert('Query has been Posted Successfully.')</script>";
         }
-        header("location:query.html");
+        header("location:post.html");
     }   
 ?>
