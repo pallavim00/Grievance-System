@@ -8,10 +8,9 @@
         $description = $_POST['description'];
     
         
-        $sql = $con->prepare("INSERT INTO query_post(level, query_title, description)values(?,?,?)");
+        $sql = $con->prepare("INSERT INTO query_post(level, query_title, description) values(?,?,?)");
         $sql->bind_param("sss",$level, $query_title, $description);
         $sql->execute();
-        mysqli_query($con,$sql);
         if(!mysqli_query($con,$sql))
         {
             echo 'not inserted';
