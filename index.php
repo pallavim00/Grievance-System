@@ -27,8 +27,7 @@ if((isset($_SESSION['username']) && $_SESSION['username'] != ""))
 		<br>
 		<p>To Create an Account...</p>
 		<p>
-			<a href="signup.php" target="_self"><button class="button"><i>Student</i></button></a>
-			<a href="Committee.html" target="_self"><button class="button"><i>Committee</i></button></a>
+			<a href="signup.php" target="_self"><button class="button"><i>Student</i></button></a>  <a href="Committee.html" target="_self"><button class="button"><i>Committee</i></button></a>
 		</p>
 		<br>
 	</div>

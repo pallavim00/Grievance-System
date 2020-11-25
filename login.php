@@ -31,19 +31,14 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
         >
       </h1>
       <br />
-      <form onsubmit="return validate()" method="post" action="connect3.php">
+      <form onsubmit="return validate()" method="post" action="login_action1.php">
         <table id="tab1">
           <tr>
             <th>
               <label for="Uname"><i>Username :</i></label>
             </th>
             <td>
-              <input
-                type="text"
-                id="username"
-                placeholder="Username"
-                name="username"
-              />
+              <input type="text" id="username" placeholder="Username" name="username" />
             </td>
           </tr>
           <tr>
@@ -55,12 +50,7 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
               <label for="p-word"><i>Password:</i></label>
             </th>
             <td>
-              <input
-                type="password"
-                id="pass"
-                placeholder="Password"
-                name="password"
-              />
+              <input type="password" id="pass" placeholder="Password" name="password"/>
             </td>
           </tr>
         </table>

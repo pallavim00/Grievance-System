@@ -50,7 +50,8 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
 	<input  type="hidden" name="formAction"  value="submit_vote">
 </form>
 <script>
-	function voteQuery(id_query) {
+	function voteQuery(id_query) 
+	{
 		document.getElementById("id_query").value = id_query;
 		document.getElementById("submitVote").submit();
 	}

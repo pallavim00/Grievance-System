@@ -1,8 +1,6 @@
 <?php
 session_start();
 include('connection.php');
-
-
 ?>
 <html>
     <head>
@@ -13,15 +11,14 @@ include('connection.php');
         <script src="signup.js"></script>
     </head>
     <body>
-      <?php
-      
-if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
-{
-	echo "<p class='".$_SESSION['msgtype']." msg'>".$_SESSION['msg']."</p>";
-	unset($_SESSION['msgtype']);
-	unset($_SESSION['msg']);
-}
-?>
+    <?php
+        if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
+        {
+	        echo "<p class='".$_SESSION['msgtype']." msg'>".$_SESSION['msg']."</p>";
+	        unset($_SESSION['msgtype']);
+	        unset($_SESSION['msg']);
+        }
+    ?>
         <div class="div3">
             <h1>
                 <u><i>Sign-up..!</i></u>
