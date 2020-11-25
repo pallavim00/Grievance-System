@@ -2,13 +2,13 @@
       session_start();
       
          include('connection.php');
-       $studentname = $_POST['studentname'];
-       $username = $_POST['username'];
+       $studentname = strip_tags($_POST['studentname']);
+       $username = strip_tags($_POST['username']);
        $id_college = (int)$_POST['institutename'];
-       $departmentname = $_POST['departmentname']; 
-       $emailid = $_POST['emailid'];
-       $contactno = $_POST['contactno'];
-       $password = $_POST['password'];
+       $departmentname = strip_tags($_POST['departmentname']); 
+       $emailid = strip_tags($_POST['emailid']);
+       $contactno = strip_tags($_POST['contactno']);
+       $password = strip_tags($_POST['password']);
   
       //Database connection
 
