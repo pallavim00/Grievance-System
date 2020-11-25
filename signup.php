@@ -99,24 +99,32 @@ if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
                         </td>
                     </tr>
                 </table>
-                <input type="checkbox" onclick="myfunction()" />Show password
+                <input type="checkbox" onclick="myfunction()" /> Show password </input>
                 <script>
-                    function mouseoverPass(obj) {
+                    function mouseoverPass(obj) 
+                    {
                     	if( obj.type == "password")
-                    	var obj = document.getElementById('pass');
-                    	 return obj.type = "text";
+                        {
+                    	    var obj = document.getElementById('pass');
+                    	    return obj.type = "text";
+                        }    
                     	else
-                    	  return obj.type = "password";
-                    	}
-
-                                 function myfunction() {
-                                     var x = document.getElementById("pass");
-                                     if (x.type === "password") {
-                                         x.type = "text";
-                                     } else {
-                                         x.type = "password";
-                                     }
-                                 }
+                        {
+                    	    return obj.type = "password";
+                        }    
+                    }
+                    function myfunction() 
+                    {
+                        var x = document.getElementById("pass");
+                        if (x.type === "password")
+                        {
+                            return x.type = "text";
+                        } 
+                        else 
+                        {
+                            return x.type = "password";
+                        }
+                    }
                 </script>
                 <br />
                 <br />
