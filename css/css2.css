@@ -17,13 +17,7 @@ body {
   padding: 40px;
   margin: auto;
 }
-#head {
-  color: #000000;
-  text-align: center;
-  width: auto;
-  font-family: "Gravitas One";
-  font-size: 30px;
-}
+
 
 .far fa-comment-dots {
   color: #000000;
@@ -39,8 +33,7 @@ label {
   margin-top: 12px;
   clear: left;
 }
-input,
-textarea {
+input,textarea {
   margin-top: 12px;
 }
 
