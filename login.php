@@ -1,3 +1,21 @@
+<?php
+
+session_start();
+
+if((isset($_SESSION['username']) && $_SESSION['username'] != ""))
+{
+    header('location:introduction.php');
+}
+
+if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
+{
+	echo "<p class='".$_SESSION['msgtype']." msg'>".$_SESSION['msg']."</p>";
+	unset($_SESSION['msgtype']);
+	unset($_SESSION['msg']);
+}
+
+?>
+
 <html>
   <title>login page</title>
   <head>
