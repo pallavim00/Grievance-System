@@ -36,12 +36,10 @@ box-sizing: border-box;
 		 border: 5px outset whitesmoke;			
 		 text-align: center;
 		 background:black;
-		 width: 35%;
+		 width: 55%;
 		 padding: 40px;
 		 margin:100px auto;
   }
-  
-  
   h1{
 	  text-align:center;
   }
@@ -108,7 +106,6 @@ box-sizing: border-box;
 	  background-color: #111111;
   }
   
-  }
 body{
 	  background-image: url("bg2.jpg");
 	  background-size:cover;
@@ -116,18 +113,6 @@ body{
 	  background-attachment: fixed;
 	  color:white;
 }
-.div3{ 
-	   border: 5px outset whitesmoke;			
-	   text-align: center;
-	   background:black;
-	   width: 55%;
-	   padding: 40px;
-	   margin:100px auto;
-}
-.div3 td{
-      width: 100%
-}
-
 h1{
 	text-align:center;
 }
