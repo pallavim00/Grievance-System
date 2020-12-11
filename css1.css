@@ -3,6 +3,7 @@ padding : 0;
 margin : 0;
 box-sizing: border-box;
 }
+<<<<<<< HEAD
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.example {background: red;}
@@ -106,6 +107,9 @@ box-sizing: border-box;
 	  background-color: #111111;
   }
   
+=======
+
+>>>>>>> b69b8bc927630475f35d5b561761f32a9c893edd
 body{
 	  background-image: url("bg2.jpg");
 	  background-size:cover;

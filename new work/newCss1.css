@@ -1,245 +1,106 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  #head {
-    color: #000000;
-    text-align: center;
-    width: auto;
-    font-family: "Gravitas One";
-    font-size: 28px;
-  }
-
-  .far fa-comment-dots {
-    color: #000000;
-    text-align: center;
-    size: 28px;
-  }
+*{
+	padding : 0;
+	margin : 0;
+	box-sizing: border-box;
+	}
+body{
+  background-image:url("bg2.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.div3{ 
+  border: 7px outset whitesmoke;			
+  text-align:center;
+  background:white;
+  width:45%;
+  padding:40px;
+  margin:auto;
+}
+#head{
+  color:#000000;
+  text-align:center;
+  width:auto;
+  font-family: 'Gravitas One';
+  font-size: 36px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .div3 {
-    border: 7px outset whitesmoke;
-    text-align: center;
-    background: white;
-    width: 45%;
-    padding: 40px;
-    margin: auto;
-  }
-  #head {
-    color: #000000;
-    text-align: center;
-    width: auto;
-    font-family: "Gravitas One";
-    font-size: 30px;
-  }
-
-  .far fa-comment-dots {
-    color: #000000;
-    text-align: center;
-    size: 30px;
-  }
+.far fa-comment-dots{
+  color:#000000;
+  text-align:center;
+  size: 36px;        
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.menuBar{
+  background: #404040;
+  text-align: center;
   }
-  body {
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
+  
+  .menuBar ul{
+  display: inline-flex;
+  list-style: none;
+  font-size: 16px;
+  
   }
-  .div3 {
-    border: 7px outset whitesmoke;
-    text-align: center;
-    background: white;
-    width: 45%;
-    padding: 40px;
-    margin: auto;
+  
+  .menuBar ul li{
+  width: 135px;
+  margin: 15px;
+  padding:10px;
+  
   }
-  #head {
-    color: #000000;
-    text-align: center;
-    width: auto;
-    font-family: "Gravitas One";
-    font-size: 32px;
-  }
-
-  .far fa-comment-dots {
-    color: #000000;
-    text-align: center;
-    size: 32px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .div3 {
-    border: 7px outset whitesmoke;
-    text-align: center;
-    background: white;
-    width: 45%;
-    padding: 40px;
-    margin: auto;
-  }
-  #head {
-    color: #000000;
-    text-align: center;
-    width: auto;
-    font-family: "Gravitas One";
-    font-size: 36px;
-  }
-
-  .far fa-comment-dots {
-    color: #000000;
-    text-align: center;
-    size: 36px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .div3 {
-    border: 7px outset whitesmoke;
-    text-align: center;
-    background: white;
-    width: 45%;
-    padding: 40px;
-    margin: auto;
-  }
-  #head {
-    color: #000000;
-    text-align: center;
-    width: auto;
-    font-family: "Gravitas One";
-    font-size: 40px;
-  }
-
-  .far fa-comment-dots {
-    color: #000000;
-    text-align: center;
-    size: 40px;
-  }
-  .menuBar {
-    background: #404040;
-    text-align: center;
-  }
-
-  .menuBar ul {
-    display: inline-flex;
-    list-style: none;
-    font-size: 16px;
-  }
-
-  .menuBar ul li {
-    width: 135px;
-    margin: 15px;
-    padding: 6px;
-  }
-
-  .menuBar ul li a {
-    text-decoration: none;
-    color: #fff;
+  
+  .menuBar ul li a{
+      text-decoration: none;
+      color: #fff;
   }
   .subMenu1 {
-    display: none;
+      display: none;
   }
-
-  .menuBar ul li:hover {
-    background: #3e78ff;
-    border-radius: 3px;
+  
+  .menuBar ul li:hover{
+      background:  #3e78ff;
+      border-radius: 3px;	
   }
-
+  
   .menuBar ul li:hover .subMenu1 {
-    display: block;
-    position: absolute;
-    background: grey;
-    margin-top: 6px;
-    margin-left: -15px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 2%;
+      display: block;
+      position: absolute;
+      background: grey;
+      margin-top: 15px;
+      margin-left: -15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
-  .menuBar .fa {
-    margin-right: 8px;
+  .menuBar .fa{
+      margin-right:8px;
   }
-
+  
   .menuBar ul li:hover .subMenu1 ul {
-    display: block;
-    margin: 10px;
+          display: block;
+          margin:10px;
+          
   }
-
+  
   .menuBar ul li:hover .subMenu1 ul li {
-    width: 140px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+      width: 140px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      background: transparent;
+      border-radius:0;
+      text-align:left;
   }
-
-  .menuBar ul li:hover .subMenu1 ul li:last-child {
-    border-bottom: none;
+  
+  .menuBar ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+  
+  .menuBar ul li:hover .subMenu1 ul :hover{
+      background: #3e78ff;
+      border-radius: 3px;
+      color:#000000;
   }
-
-  .menuBar ul li:hover .subMenu1 ul :hover {
-    background: #3e78ff;
-    border-radius: 3px;
-    color: #000000;
+  
+  i{
+      color: white;
   }
-
-  i {
-    color: white;
-  }
-}
 
 .div3 {
   border: 7px outset whitesmoke;
@@ -386,3 +247,177 @@ p {
 #center {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+*{
+padding : 0;
+margin : 0;
+box-sizing: border-box;
+}
+body{
+    background-image:url("bg2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#head{
+color:#000000;
+text-align:center;
+    width:auto;
+    font-family: 'Gravitas One';
+    font-size: 28px;
+  
+}
+
+.far fa-comment-dots{
+color:#000000;
+text-align:center;
+    size: 28px;
+    
+}
+.menuBar{
+  background: #404040;
+  text-align: center;
+  padding:none;
+  }
+    
+.menuBar ul{
+    display: inline-flex;
+    list-style: none;
+    font-size: 16px;
+    
+}
+.menuBar ul li{
+    width: 135px;
+    margin:10px;
+    padding:none;
+    }
+    
+.menuBar ul li a{
+    text-decoration: none;
+    color: #fff;
+    box-align:right;
+}
+.hide {
+    display: none;
+}
+
+.menuBar ul li:hover{
+    background:  #3e78ff;
+    border-radius: 3px;	
+}
+
+.menuBar ul li:hover .hide {
+    display: block;
+    position: absolute;
+    background: grey;
+    margin-top: 15px;
+    margin-left: -15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menuBar .fa{
+    margin-right:8px;
+}
+
+.menuBar ul li:hover .hide ul {899999999999999998999989
+  display: block;
+  margin:10px;
+        
+}
+
+.menuBar ul li:hover .hide ul li {
+  width: 140px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius:0;
+  text-align:left;
+}
+
+.menuBar ul li:hover .hide ul li:last-child {border-bottom:none;}
+
+.menuBar ul li:hover .hide ul :hover{
+  background: #3e78ff;
+  border-radius: 3px;
+  color:#000000;
+}
+
+
+
+    
+.hide{
+  background: #404040;
+  text-align: center;
+  padding:none;
+  }
+    
+.hide ul{
+    display: inline-flex;
+    list-style: none;
+    font-size: 16px;
+    
+}
+.hide ul li{
+    width: 135px;
+    margin:5px;
+    padding:none;
+    align:right;
+    }
+    
+.hide ul li a{
+    text-decoration: none;
+    color: #fff;
+    box-align:right;
+}
+.subMenu1 {
+    display: none;
+}
+
+.hide ul li:hover{
+    background:  #3e78ff;
+    border-radius: 3px;	
+}
+
+.hide ul li:hover .subMenu1 {
+    display: block;
+    position: absolute;
+    background: grey;
+    margin-top: 15px;
+    margin-left: -15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.hide .fa{
+    margin-right:8px;
+}
+
+.hide ul li:hover .subMenu ul {
+  display:block;
+  margin:10px;
+        
+}
+
+.hide ul li:hover .subMenu1 ul li {
+  width: 140px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius:0;
+  text-align:left;
+}
+
+.hide ul li:hover .subMenu1 ul li:last-child {border-bottom:none;}
+
+.hide ul li:hover .subMenu1 ul :hover{
+  background: #3e78ff;
+  border-radius: 3px;
+  color:#000000;
+}
+    
+  i{
+      color: white;
+  }
+
+}
+
+
