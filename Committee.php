@@ -1,3 +1,7 @@
+<?php
+session_start();
+include('connection.php');
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,16 +16,20 @@
   </head>
 
   <body text="white">
+  <?php
+    if(isset($_SESSION['msg']) && $_SESSION['msg'] != "")
+    {
+	      echo "<p class='".$_SESSION['msgtype']." msg'>".$_SESSION['msg']."</p>";
+	      unset($_SESSION['msgtype']);
+	      unset($_SESSION['msg']);
+    }
+  ?>
     <div class="div3">
       <h1>
         <u><i>Committee Details..!</i></u>
       </h1>
       <br /><br />
-      <form
-        onsubmit=" return committeeValidate()"
-        method="post"
-        action="connect2.php"
-      >
+      <form onsubmit="return committeeValidate()" method="post" action="committee_action.php">
         <table id="tab1">
           <tr>
             <th>
@@ -36,12 +44,19 @@
               <label for="iname"><i>Institute Name:</i></label>
             </th>
             <td>
-              <input
-                type="text"
-                id="iname"
-                placeholder="Institute Name"
-                name="institutename"
-              />
+                <select id="iname" name="institutename">
+                <option value="">Select Institute Name</option>
+                <?php 
+                    $sql = "select c.* from colleges c";  
+                    $result = mysqli_query($con, $sql);  
+                    while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+                    {
+                    ?>
+                          <option value="<?php echo $row['id_college']; ?>"><?php echo $row['name']; ?></option>
+                    <?php
+                    }
+                  ?>
+                </select>
             </td>
           </tr>
           <tr>
@@ -57,12 +72,7 @@
               <label for="p-word"><i>Password:</i></label>
             </th>
             <td>
-              <input
-                type="password"
-                id="pass"
-                placeholder="password"
-                name="password"
-              />
+              <input type="password" id="pass" placeholder="password" name="password" />
             </td>
           </tr>
         </table>

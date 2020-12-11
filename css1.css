@@ -3,7 +3,113 @@ padding : 0;
 margin : 0;
 box-sizing: border-box;
 }
+<<<<<<< HEAD
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+	.example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+	.example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+	.example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+	body{
+		background-image: url("bg2.jpg");
+		background-size:cover;
+		background-position: center;
+		background-attachment: fixed;
+		color:white;
+  }
+  .div3{ 
+		 border: 5px outset whitesmoke;			
+		 text-align: center;
+		 background:black;
+		 width: 55%;
+		 padding: 40px;
+		 margin:100px auto;
+  }
+  h1{
+	  text-align:center;
+  }
+  #tab1{
+	  margin-left:auto;
+	  margin-right:auto;
+	  padding:10;
+	  text-align: right;
+	  
+  }
+  .button{
+	  display: inline-block;
+	  padding:10px  25px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  color: white;
+	  background-color: blue;
+	  border:none;
+	  border-radius:15px;
+	  box-shadow: 0 4px gray;
+  }
+  .button:hover{
+	  background-color: #3e8e41;
+  }
+  .button:active{
+	  background-color: #3e8e41 ;
+	  box-shadow: 0 2px #666;
+	  transform: translateY(2px);
+  }
+  .menuBar{
+  background:#3e8e41;
+  text-align: center;
+  }
+  
+  .menuBar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #333333;
+  }
+  
+  .menuBar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 5px;
+  padding-left:10px;}
+  
+  .xyz{
+	  float: right;
+  }
+  
+  .abc a {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+  }
+  
+  .abc a:hover {
+	  background-color: #111111;
+  }
+  
+=======
 
+>>>>>>> b69b8bc927630475f35d5b561761f32a9c893edd
 body{
 	  background-image: url("bg2.jpg");
 	  background-size:cover;
@@ -11,16 +117,6 @@ body{
 	  background-attachment: fixed;
 	  color:white;
 }
-.div3{ 
-	   border: 5px outset whitesmoke;			
-	   text-align: center;
-	   background:black;
-	   width: 35%;
-	   padding: 40px;
-	   margin:100px auto;
-}
-
-
 h1{
 	text-align:center;
 }

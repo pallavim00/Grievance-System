@@ -19,7 +19,7 @@ include('security.php');
 			<li class="active"> <i class="fa fa-info" aria-hidden="true"></i><a href="introduction.php" target="_self">Introduction</a></li>
 			<li ><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="" target="_self">History</a> </li>
 			<li ><i class="fa fa-check-square-o" aria-hidden="true"></i><a href="outlook.php" target="_self">Outlook</a></li>
-			<li ><i class="fa fa-plus-square" aria-hidden="true"></i><a href="post.php" target="_self">Post</a></li>
+			
 			<li ><i class="fa fa-user" aria-hidden="true"></i><a href="">Username</a>		
 				<div class="subMenu1">
 				<ul>
